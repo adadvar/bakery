@@ -9,10 +9,10 @@ const SliderHero = ({ images }: { images: string[] }) => {
 	const base_url = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 	return (
-		<div className="embla" ref={emblaRef}>
-			<div className="embla__container">
+		<div className="embla w-full h-full" ref={emblaRef}>
+			<div className="embla__container w-full h-full">
 				{images.map((image: any, index: any) => (
-					<div className="embla__slide" key={index}>
+					<div className="embla__slide shrink-0 grow-0 basis-full" key={index}>
 						<Image
 							src={`${base_url}/img/${image}`}
 							alt=""

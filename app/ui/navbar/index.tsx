@@ -8,7 +8,7 @@ import Search from "./search";
 
 const Navbar = () => {
 	return (
-		<nav className="h-[107px] p-[25px] border-b border-br bg-white">
+		<nav className="p-[25px] border-b border-br bg-white">
 			<div className="hidden items-center justify-between space-x-6 lg:flex">
 				<div className="flex space-x-6">
 					<PersonPhoto />

@@ -2,9 +2,9 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import SliderNews from "./slider-news";
+import SliderDiscounts from "./slider-discounts";
 
-const News = () => {
+const Discounts = () => {
 	const base_url = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 	const items = [
@@ -28,22 +28,17 @@ const News = () => {
 			img: "product1.jpg",
 			price: "12.000",
 		},
-		{
-			title: "کاپ کیک کدوحلوایی",
-			img: "product1.jpg",
-			price: "12.000",
-		},
 	];
 
 	return (
 		<div className="flex flex-col px-8 mb-24">
-			<div className="flex flex-row-reverse items-center justify-between mb-[120px]">
+			<div className="flex flex-row-reverse items-center justify-between mb-12">
 				<div className="flex items-center">
 					<h1 className="text-2xl text-font-color font-medium text-right ">
-						تازه ها
+						تخفیف ها
 					</h1>
 					<Image
-						src={`${base_url}/img/tag.svg`}
+						src={`${base_url}/img/offer.svg`}
 						alt=""
 						width={24}
 						height={24}
@@ -62,11 +57,10 @@ const News = () => {
 				</Link>
 			</div>
 			<div className="relative">
-				<SliderNews items={items} />
-				<div className="absolute inset-0 right-2/3 bg-gradient-to-r from-[#fff] via-transparent to-transparent"></div>
+				<SliderDiscounts items={items} />
 			</div>
 		</div>
 	);
 };
 
-export default News;
+export default Discounts;

@@ -13,6 +13,12 @@
   --border: #f0f0f0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .embla {
   overflow: hidden;
 }
@@ -20,8 +26,9 @@
   display: flex;
 }
 .embla__slide {
-  flex: 0 0 100%;
   min-width: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 

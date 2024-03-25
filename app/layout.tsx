@@ -18,7 +18,7 @@ export default function RootLayout({
 			<body className="">
 				<div className="xl:max-w-[1440px] relative mx-auto flex flex-row-reverse">
 					<Sidebar />
-					<div className="flex-1">
+					<div className="">
 						<Navbar />
 						{children}
 					</div>

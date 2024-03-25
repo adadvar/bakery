@@ -2,20 +2,18 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import Link from "next/link";
 interface Prop {
 	title: string;
 	img: string;
 	price: string;
 }
 
-const SliderNews = ({ items }: { items: Prop[] }) => {
+const SliderDiscounts = ({ items }: { items: Prop[] }) => {
 	const [emblaRef] = useEmblaCarousel({ dragFree: true, direction: "rtl" });
-	const base_url = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 	return (
 		<div
-			className="embla mx-auto max-w-60  xl:max-w-[1440px] lg:max-w-[976px] md:max-w-[768px]"
+			className="embla mx-auto max-w-60 xl:max-w-[1440px] lg:max-w-[976px] md:max-w-[768px]"
 			dir="rtl"
 		>
 			<div className="embla__viewport" ref={emblaRef}>
@@ -31,7 +29,7 @@ const SliderNews = ({ items }: { items: Prop[] }) => {
 	);
 };
 
-export default SliderNews;
+export default SliderDiscounts;
 
 const Slide = ({ item, index }: { item: Prop; index: number }) => {
 	const base_url = process.env.NEXT_PUBLIC_BASE_URL as string;
