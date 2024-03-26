@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "./ui/sidebar";
 import Navbar from "./ui/navbar";
+import Footer from "./ui/footer";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -15,12 +16,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="">
+			<body className="bg-bg">
 				<div className="xl:max-w-[1440px] relative mx-auto flex flex-row-reverse">
 					<Sidebar />
 					<div className="">
 						<Navbar />
 						{children}
+						<Footer />
 					</div>
 				</div>
 			</body>

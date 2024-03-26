@@ -34,7 +34,7 @@ const Sidebar = () => {
 	];
 
 	return (
-		<div className="w-[118px] min-w-[118px] sticky top-0 h-screen bg-white border border-l-br p-5">
+		<div className="w-[118px] min-w-[118px] sticky top-0 h-screen overflow-y-scroll scrollbar-hide bg-white border border-l-br py-5">
 			<div className="flex flex-col items-center space-y-12">
 				<div className="flex flex-col items-center space-y-5">
 					<Image

@@ -52,6 +52,10 @@ const Slide = ({ item, index }: { item: Prop; index: number }) => {
 				</h4>
 				<div className="flex items-center justify-start gap-1">
 					<p className="text-sm font-semibold fa-num">{item.price}</p>
+					<p className="text-xs text-gray-font font-light line-through">تومان</p>
+				</div>
+				<div className="flex items-center justify-start mr-2 gap-1">
+					<p className="text-sm font-semibold fa-num">{item.price}</p>
 					<p className="text-xs text-gray-font font-light">تومان</p>
 				</div>
 				<Image

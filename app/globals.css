@@ -6,6 +6,7 @@
   --primary: #154160;
   --primary-light: #6f899b;
   --secondry: #ffb582;
+  --bg: #fbfbfb;
   --font-color: #292d32;
   --white-color: #fdfdfd;
   --gray-font: #9b9999;
@@ -29,6 +30,16 @@
   min-width: 0;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 

@@ -19,6 +19,7 @@ const config: Config = {
         'primary-light': 'var(--primary-light)',
         'secondry': 'var(--secondry)',
         'font-color': 'var(--font-color)',
+        'bg': 'var(--bg)',
         'white-color': 'var(--white-color)',
         'gray-font': 'var(--gray-font)',
         'line': 'var(--line)',
