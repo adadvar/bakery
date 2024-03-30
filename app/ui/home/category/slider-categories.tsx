@@ -16,7 +16,7 @@ const SliderCategories = ({ items }: { items: Prop[] }) => {
 					<Image
 						src={`${base_url}/img/${item.img}`}
 						alt={`Slide ${index}`}
-						className="rounded-full mb-5 shadow-md"
+						className="rounded-full mb-5 shadow-md transition ease-in-out duration-200 hover:scale-125"
 						width={152}
 						height={152}
 					/>

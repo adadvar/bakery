@@ -7,27 +7,27 @@ const Sidebar = () => {
 	const base_url = process.env.NEXT_PUBLIC_BASE_URL as string;
 	const items = [
 		{
-			alt: "category",
+			alt: "دسته بندی",
 			src: base_url + "/img/category.svg",
 			path: "/",
 		},
 		{
-			alt: "call menu",
+			alt: "تماس با ما",
 			src: base_url + "/img/call_menu.svg",
 			path: "/",
 		},
 		{
-			alt: "group",
+			alt: "تاریخچه خرید",
 			src: base_url + "/img/vuesax_bulk_task_square.svg",
 			path: "/",
 		},
 		{
-			alt: "basket menu",
+			alt: "سبد خرید",
 			src: base_url + "/img/shopping_cart2.svg",
 			path: "/",
 		},
 		{
-			alt: "profile",
+			alt: "حساب کاربری",
 			src: base_url + "/img/profile.svg",
 			path: "/",
 		},

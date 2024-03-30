@@ -14,10 +14,18 @@
   --border: #f0f0f0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: IRANYekanWeb;
+  color: var(--font-color)
+}
+.fa-num {
+  font-family: IRANYekanFANUM;
 }
 
 .embla {
@@ -143,10 +151,3 @@
 
 
 
-body {
-  font-family: IRANYekanWeb;
-  color: var(--font-color)
-}
-.fa-num {
-  font-family: IRANYekanFANUM;
-}
